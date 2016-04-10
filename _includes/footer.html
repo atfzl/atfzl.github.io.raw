@@ -7,19 +7,21 @@
     </h2>
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+      <div class="footer-col">
         <h4>
           Made with
-          <span class="icon">{% include icon-blood.svg %}</span>
+          <span class="icon32">{% include icon-blood.svg %}</span>
           and
-          <span class="icon">{% include icon-sweat.svg %}</span>
+          <span class="icon32">{% include icon-sweat.svg %}</span>
         </h4>
         <ul class="contact-list">
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         </ul>
       </div>
+    </div>
 
-      <div class="footer-col footer-col-2">
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -32,10 +34,18 @@
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
+
+          {% if site.linkedin_username %}
+          <li>
+            {% include icon-linkedin.html username=site.linkedin_username %}
+          </li>
+          {% endif %}
         </ul>
       </div>
+    </div>
 
-      <div class="footer-col footer-col-3" style="font-weight: 600;">
+    <div class="footer-col-wrapper">
+      <div class="footer-col" style="font-weight: 600;">
         <a href="{{site.baseurl}}/about/">About Me</a>
       </div>
     </div>

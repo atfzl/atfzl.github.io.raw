@@ -35,10 +35,19 @@
   margin-bottom: $spacing-unit / 2;
 }
 
-.contact-list,
-.social-media-list {
+.contact-list {
   list-style: none;
   margin-left: 0;
+}
+
+.social-media-list {
+  display: flex;
+  list-style: none;
+  margin-left: 0;
+
+  > li {
+    margin-left: 10px;
+  }
 }
 
 .footer-col-wrapper {
