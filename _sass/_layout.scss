@@ -46,7 +46,7 @@
   margin-left: 0;
 
   > li {
-    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -156,6 +156,10 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
+
+  a {
+    color: $link-color;
+  }
 
   h2 {
     font-size: 32px;
