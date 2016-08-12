@@ -54,3 +54,9 @@
 
     };
 })(jQuery);
+
+(function (window, document) {
+  document.addEventListener('DOMContentLoaded', function () {
+    window.gistAsync();
+  })
+})(window, document);
