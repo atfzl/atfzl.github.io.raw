@@ -20,6 +20,9 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
 
+    {{! Prismjs css }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
+
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{ghost_head}}
 </head>
@@ -50,6 +53,9 @@
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     {{!-- The main JavaScript file for Casper --}}
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+    {{! Prism JS }}
+    <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
 
     {{! Google Analytics }}
     {{> "google-analytics" }}
