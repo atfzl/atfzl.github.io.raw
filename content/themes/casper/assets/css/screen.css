@@ -10,14 +10,15 @@
     3.  Utilities
     4.  General
     5.  Single Post
-    6.  Tag Archive
-    7.  Read Next
+    6.  Author Profile
+    7.  Read More
     8.  Third Party Elements
     9.  Pagination
-    10.  Footer
-    11. Media Queries (Tablet)
-    12. Media Queries (Mobile)
-    13. Animations
+    10. Subscribe
+    11. Footer
+    12. Media Queries (Tablet)
+    13. Media Queries (Mobile)
+    14. Animations
 
 */
 
@@ -28,7 +29,7 @@
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
 }
 body { margin: 0; }
 article, aside, details,
@@ -116,7 +117,7 @@ td, th{ padding: 0; }
 
 /* Apply these base styles to all icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "casper-icons", "Open Sans", sans-serif;
+    font-family: "casper-icons", "Oswald", sans-serif;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -178,14 +179,12 @@ html {
     max-height: 100%;
     font-size: 62.5%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-font-smoothing: antialiased;
 }
 
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
-    letter-spacing: 0.01rem;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 1.8rem;
     line-height: 1.75em;
     color: #3A4145;
@@ -211,24 +210,21 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     text-rendering: geometricPrecision;
 }
 
 h1 {
     font-size: 5rem;
-    letter-spacing: -2px;
     text-indent: -3px;
 }
 
 h2 {
     font-size: 3.6rem;
-    letter-spacing: -1px;
 }
 
 h3 {
     font-size: 3rem;
-    letter-spacing: -0.6px;
 }
 
 h4 {
@@ -338,12 +334,12 @@ mark {
 
 code, tt {
     padding: 1px 3px;
-    font-family: monospace, sans-serif;
+    font-family: "Space Mono", monospace, sans-serif;
     font-size: 0.85em;
     white-space: pre-wrap;
-    border: #E3EDF3 1px solid;
-    background: #F7FAFB;
-    border-radius: 2px;
+    border: 1px solid #e4e4e4;
+    background: #fafafa;
+    border-radius: 15px;
     -webkit-font-feature-settings: "liga" 0;
     -moz-font-feature-settings: "liga" 0;
     font-feature-settings: "liga" 0;
@@ -353,15 +349,20 @@ pre {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 0 1.75em 0;
-    border: #E3EDF3 1px solid;
     width: 100%;
     padding: 10px;
-    font-family: Inconsolata, monospace, sans-serif;
-    font-size: 0.9em;
+    font-family: "Space Mono", monospace, sans-serif !important;
+    font-size: 0.8em;
     white-space: pre;
     overflow: auto;
-    background: #F7FAFB;
+    background: #FFF !important;
     border-radius: 3px;
+    line-height: 1.7 !important;
+    margin-bottom: 1.275em !important;
+}
+
+pre * {
+  font-family: "Space Mono", monospace, sans-serif !important;
 }
 
 pre code, pre tt {
@@ -447,7 +448,7 @@ textarea, select, input {
     padding: 6px 9px;
     margin: 0 0 5px 0;
     outline: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.6rem;
     font-weight: 100;
     line-height: 1.4em;
@@ -501,12 +502,11 @@ button {
     outline: none;
     text-decoration: none;
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 11px; // Hack because Firefox sucks ass.
-    line-height: 13px; // Hack because Firefox sucks ass.
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px; /* Hacks targeting Firefox. */
+    line-height: 13px; /* Hacks targeting Firefox. */
     font-weight: 300;
     text-align: center;
-    letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: none;
     border-radius: 0.3rem;
@@ -598,7 +598,7 @@ body.nav-opened .site-wrapper {
 
 .main-nav a {
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* Navigation */
@@ -773,7 +773,7 @@ body.nav-opened .nav {
     color: #111 !important; /* Overides `.nav a:link, .nav a:visited` colour */
     text-align: center;
     font-size: 12px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 35px;
@@ -943,9 +943,8 @@ body.nav-opened .nav {
 .page-title {
     margin: 10px 0 10px 0;
     font-size: 5rem;
-    letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: #fff;
 }
 
@@ -954,8 +953,7 @@ body.nav-opened .nav {
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "Merriweather", serif;
-    letter-spacing: 0.01rem;
+    font-family: "Source Sans Pro", sans-serif;
     color: rgba(255,255,255,0.8);
 }
 
@@ -1036,7 +1034,7 @@ body:not(.post-template) .post-title {
 .post-meta {
     display: block;
     margin: 1.75rem 0 0 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
@@ -1112,9 +1110,6 @@ body:not(.post-template) .post-title {
     line-height: 1.5em;
 }
 
-.prism-show-language-label {
-  font-family: sans-serif
-}
 
 /* ==========================================================================
    5. Single Post - When you click on an individual post
@@ -1378,7 +1373,6 @@ body:not(.post-template) .post-title {
     line-height: 1.5em;
     font-weight: 200;
     color: #50585D;
-    letter-spacing: 0;
     text-indent: 0;
 }
 
@@ -1388,8 +1382,7 @@ body:not(.post-template) .post-title {
 /* Location, website, and link */
 .author-profile .author-meta {
     margin: 2rem 0;
-    font-family: "Merriweather", serif;
-    letter-spacing: 0.01rem;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 1.7rem;
 }
 .author-meta span {
@@ -1474,7 +1467,7 @@ body:not(.post-template) .post-title {
     padding: 4px 10px 5px;
     text-transform: uppercase;
     font-size: 1.1rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: rgba(255,255,255,0.8);
     border: rgba(255,255,255,0.5) 1px solid;
     border-radius: 4px;
@@ -1566,7 +1559,7 @@ body:not(.post-template) .post-title {
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
@@ -1695,7 +1688,7 @@ body:not(.post-template) .post-title {
 }
 
 .gh-subscribe-rss {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
     line-height: 1.4em;
 }
@@ -1708,7 +1701,7 @@ body:not(.post-template) .post-title {
     position: relative;
     margin: 8rem 0 0 0;
     padding: 1rem 15px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
     color: #BBC7CC;
@@ -1772,7 +1765,6 @@ body:not(.post-template) .post-title {
 
     .page-title {
         font-size: 4rem;
-        letter-spacing: -1px;
     }
 
     .page-description {
@@ -1889,7 +1881,7 @@ body:not(.post-template) .post-title {
 
 
 /* ==========================================================================
-   12. Media Queries - Smaller than 500px
+   13. Media Queries - Smaller than 500px
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
@@ -2026,12 +2018,10 @@ body:not(.post-template) .post-title {
 
     h1 {
         font-size: 2.8rem;
-        letter-spacing: -1px;
     }
 
     h2 {
         font-size: 2.4rem;
-        letter-spacing: 0;
     }
 
     h3 {
@@ -2164,7 +2154,7 @@ body:not(.post-template) .post-title {
 
 
 /* ==========================================================================
-   13. Animations
+   14. Animations
    ========================================================================== */
 
 /* Used to fade in title/desc on the home page */
