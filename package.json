@@ -20,7 +20,8 @@
   "scripts": {
     "preinstall": "node core/server/utils/npm/preinstall.js",
     "start": "node index",
-    "test": "grunt validate --verbose"
+    "test": "grunt validate --verbose",
+    "build": "buster generate --domain=\"localhost:2368\""
   },
   "engines": {
     "node": "~0.10.0 || ~0.12.0 || ^4.2.0"
