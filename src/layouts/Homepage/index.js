@@ -1,14 +1,11 @@
-import React from "react"
+import React from 'react';
 
-import LatestPosts from "../../components/LatestPosts"
-import Page from "../Page"
-
-const Homepage = (props) => {
+const Homepage = () => {
   return (
-    <Page { ...props }>
-      <LatestPosts />
-    </Page>
+    <div>
+      Home
+    </div>
   )
-}
+};
 
-export default Homepage
+export default Homepage;
