@@ -1,10 +1,15 @@
-import { PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 
 import './index.global.css';
 import './highlight.global.css';
 
+import ServerSideStyles from './components/ServerSideStyles';
+
 const AppContainer = (props) => (
-  props.children
+  <div>
+    {props.children}
+    <ServerSideStyles />
+  </div>
 );
 
 AppContainer.propTypes = {
