@@ -13,12 +13,10 @@ const Container = styled.div`
   }
 `;
 
-const Homepage = () => {
-  return (
-    <Container>
-      Home
-    </Container>
-  )
-};
+const Homepage = () => (
+  <Container>
+    Home
+  </Container>
+);
 
 export default Homepage;

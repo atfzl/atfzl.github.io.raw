@@ -5,7 +5,7 @@ import './highlight.global.css';
 
 import ServerSideStyles from './components/ServerSideStyles';
 
-const AppContainer = (props) => (
+const AppContainer = props => (
   <div>
     {props.children}
     <ServerSideStyles />
@@ -13,7 +13,7 @@ const AppContainer = (props) => (
 );
 
 AppContainer.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
 };
 
 export default AppContainer;
