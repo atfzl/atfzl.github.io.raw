@@ -137,7 +137,6 @@
   },
   "dependencies": {
     "normalize.css": "^5.0.0",
-    "styled-components": "^1.4.3",
     "typography": "^0.15.8"
   }
 }
