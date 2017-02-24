@@ -153,7 +153,7 @@ export default (config = {}) => {
           // depending on your need, you might need to scope node_modules
           // for global CSS if you want to keep CSS Modules by default
           // for your own CSS. If so, uncomment the line below
-          // include: path.resolve(__dirname, "node_modules"),
+          include: path.resolve(__dirname, "node_modules"),
           loader: ExtractTextPlugin.extract(
             "style-loader",
             [
