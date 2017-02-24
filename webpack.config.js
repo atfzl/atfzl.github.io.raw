@@ -148,7 +148,6 @@ export default (config = {}) => {
         // ! \\ If you want global CSS for node_modules only, just uncomment
         // this section and the `include` part
         // // webpack 1
-        /*
         {
           test: /\.css$/,
           // depending on your need, you might need to scope node_modules
@@ -163,7 +162,6 @@ export default (config = {}) => {
             ].join("!")
           ),
         },
-        */
         // // webpack 2
         /*
         {
