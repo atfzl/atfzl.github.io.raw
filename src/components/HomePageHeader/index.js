@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 import { Link } from 'phenomic';
-import { Motion, spring } from 'react-motion';
+import { Motion, spring, presets } from 'react-motion';
 
 import s from './index.scss';
 
@@ -11,17 +11,27 @@ type propTypes = {
 
 export default (props: propTypes) => (
   <div className={cx(props.className, s.container)}>
-    <div className={s.logoContainer}>
-      <h1 className={s.logo}>
-        atfzl
-      </h1>
-      <div className={s.name}>
-        Atif Afzal
-      </div>
-    </div>
+    <Motion
+      defaultStyle={{ opacity: 0.1 }}
+      style={{ opacity: spring(1, presets.stiff) }}
+    >
+      {styl =>
+        <div
+          style={styl}
+          className={s.logoContainer}
+        >
+          <h1 className={s.logo}>
+            atfzl
+          </h1>
+          <div className={s.name}>
+            Atif Afzal
+          </div>
+        </div>
+      }
+    </Motion>
     <Motion
       defaultStyle={{ v: 400 }}
-      style={{ v: spring(0, { stiffness: 120, damping: 15 }) }}
+      style={{ v: spring(0, { stiffness: 120, damping: 12 }) }}
     >
       {styl =>
         <div
