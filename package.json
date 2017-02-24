@@ -138,6 +138,7 @@
     "whatwg-fetch": "^0.11.0"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "normalize.css": "^5.0.0"
   }
 }

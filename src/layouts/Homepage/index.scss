@@ -1,4 +1,10 @@
-.logo {
-  color: red;
-  display: flex;
+.container {
+  padding: 1rem;
+}
+
+.header {
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
