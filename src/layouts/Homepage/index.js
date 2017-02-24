@@ -2,17 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  background-color: cyan;
-  width: 400px;
+`;
 
-  @media (min-width: 768px) {
-    width: 600px;
-  }
+const Logo = styled.h1`
+  font-size: 64px;
 `;
 
 const Homepage = () => (
   <Container>
-    Home
+    <Logo>atfzl</Logo>
   </Container>
 );
 
