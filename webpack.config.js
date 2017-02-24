@@ -255,7 +255,7 @@ export default (config = {}) => {
       // "plugins" option directly in query, see postcss-loader usage above)
       // https://github.com/postcss/postcss-loader/issues/99
       new webpack.LoaderOptionsPlugin({
-        test: /\.css$/,
+        test: /\.s?css$/,
         options: {
           postcss: postcssPlugins,
           // required to avoid issue css-loader?modules
