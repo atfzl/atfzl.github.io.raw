@@ -40,7 +40,7 @@ export default (props: propTypes) => (
         >
           <a href="https://github.com/atfzl">Github</a>
           <Link to="/blog">Blog</Link>
-          <a href="https://linkedin.com/in/atfzl">Linkedin</a>
+          <a href="https://linkedin.com/in/atfzl">LinkedIn</a>
           <a href="https://twitter.com/atfzl">Twitter</a>
         </div>
       }
