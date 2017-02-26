@@ -1,15 +1,24 @@
 .container {
   width: 600px;
   display: flex;
-  flex-direction: row;
   align-items: baseline;
-  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: auto;
+    align-items: flex-end;
+  }
 }
 
 .logoContainer {
   display: inline-block;
   position: relative;
   margin-right: 2rem;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
 }
 
 .logo {
@@ -21,7 +30,7 @@
 .name {
   position: absolute;
   font-size: 1rem;
-  right: 4px;
+  right: 2px;
   bottom: -6px;
 }
 
@@ -30,4 +39,10 @@
   flex-direction: row;
   flex-grow: 1;
   justify-content: space-around;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: 25vh;
+    align-items: flex-end;
+  }
 }
