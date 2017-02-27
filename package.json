@@ -7,6 +7,7 @@
   "googleAnalyticsUA": "UA-79198756-1",
   "repository": "",
   "scripts": {
+    "deploy": "npm run build && cd dist && git init && git remote add origin 'git@github.com:atfzl/atfzl.github.io.git' && git add . && git commit -am update && git push -f",
     "lint:js": "eslint --ignore-path .gitignore --fix .",
     "lint:css": "stylelint \"src/**/*.css\"",
     "lint": "npm-run-all --parallel lint:*",
