@@ -3,6 +3,7 @@
   "rules": {
     "react/jsx-filename-extension": 0,
     "import/no-extraneous-dependencies": 0,
-    "no-underscore-dangle": 0
+    "no-underscore-dangle": 0,
+    "react/no-unused-prop-types": 0
   }
 }
