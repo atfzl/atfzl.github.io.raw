@@ -23,9 +23,6 @@ const LatestPosts = (props, { collection }) => {
           </div>
         </Link>
        ))}
-      <a href="#" className={s.circle}>
-        <div className={s.back} />
-      </a>
     </div>
   );
 };
