@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  margin: 45px;
+
+  @media (max-width: 768px) {
+    margin: 20px;
+  }
+}
+
+.innerContainer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0;
+  margin-right: 35px;
+}
+
+.date {
+  font-size: 12px;
+  color: hsla(0, 0%, 0%, 0.4);
+}
+
+:global {
+  .phenomic-BodyContainer {
+    img {
+      width: 100%;
+    }
+
+    a {
+      color: #4492ff;
+    }
+
+    code {
+      font-size: 14px;
+    }
+  }
+}

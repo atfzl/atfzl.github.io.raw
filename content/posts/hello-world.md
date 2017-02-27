@@ -15,7 +15,12 @@ Thank you, don't forget to take a flyer. Look, I'm just not ready to ask Lorrain
 
 I still don't understand, how am I supposed to go to the dance with her, if she's already going to the dance with you. Our first television set, Dad just picked it up today. Do you have a television? I hope so. Uh, look me up when you get there. Stand tall, boy, have some respect for yourself. Don't you know that if you let people walk all over you know, they'll be walking all over you for the rest of your life? Listen to me, do you think I'm gonna spend the rest of my life in this slop house?
 
+[link](www.google.com)
+
 Where were we. That's for messing up my hair. I'm sure that in 1985, plutonium is available at every corner drug store, but in 1955, it's a little hard to come by. Marty, I'm sorry, but I'm afraid you're stuck here. Where's Einstein, is he with you? Listen, this is very important, I forgot my video camera, could you stop by my place and pick it up on your way to the mall?
+
+![alt text](http://wallpapercave.com/wp/8pZ7Qmd.jpg "Logo Title Text 1")
+
 
 Hi. Now Biff, don't con me. Of course I do. Just a second, let's see if I could find it. George, buddy. remember that girl I introduced you to, Lorraine. What are you writing? Let's go.
 

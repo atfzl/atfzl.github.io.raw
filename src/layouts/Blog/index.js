@@ -9,7 +9,7 @@ const Blog = () => (
   <div className={s.container}>
     <h1>Posts</h1>
     <LatestPosts />
-    <BackButton />
+    <BackButton to="/" />
   </div>
 );
 

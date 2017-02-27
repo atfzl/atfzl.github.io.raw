@@ -3,9 +3,13 @@ import { Link } from 'phenomic';
 
 import s from './index.scss';
 
-const BackButton = () => (
+type propTypes = {
+  to: string,
+};
+
+const BackButton = (props: propTypes) => (
   <Link
-    to=".."
+    to={props.to}
     className={s.circle}
   >
     <span className={s.back} />

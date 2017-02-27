@@ -39,7 +39,7 @@ export default (props: propTypes) => (
           style={{ transform: `translate(${styl.v}px)` }}
         >
           <a href="https://github.com/atfzl">Github</a>
-          <Link to="/blog">Blog</Link>
+          <Link to="/posts">Blog</Link>
           <a href="https://linkedin.com/in/atfzl">LinkedIn</a>
           <a href="https://twitter.com/atfzl">Twitter</a>
         </div>
