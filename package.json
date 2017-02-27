@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "homepage": "http://atfzl.me",
   "twitter": "atfzl",
+  "googleAnalyticsUA": "UA-79198756-1",
   "repository": "",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
@@ -141,6 +142,7 @@
     "classnames": "^2.2.5",
     "lodash": "^4.17.4",
     "normalize.css": "^5.0.0",
+    "react-google-analytics": "^0.2.0",
     "react-motion": "^0.4.7"
   }
 }
