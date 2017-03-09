@@ -12,7 +12,7 @@ type propTypes = {
 export default (props: propTypes) => (
   <div className={cx(props.className, s.container)}>
     <Motion
-      defaultStyle={{ opacity: 0.1 }}
+      defaultStyle={{ opacity: 0 }}
       style={{ opacity: spring(1, presets.stiff) }}
     >
       {styl =>
@@ -30,13 +30,13 @@ export default (props: propTypes) => (
       }
     </Motion>
     <Motion
-      defaultStyle={{ v: 400 }}
-      style={{ v: spring(0, { stiffness: 120, damping: 12 }) }}
+      defaultStyle={{ v: 400, opacity: 0 }}
+      style={{ v: spring(0, { stiffness: 120, damping: 12 }), opacity: 1 }}
     >
       {styl =>
         <div
           className={s.links}
-          style={{ transform: `translate(${styl.v}px)` }}
+          style={{ transform: `translate(${styl.v}px)`, opacity: styl.opacity }}
         >
           <a href="https://github.com/atfzl">Github</a>
           <Link to="/posts">Blog</Link>
